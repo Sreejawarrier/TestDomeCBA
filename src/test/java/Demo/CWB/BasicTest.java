@@ -1,7 +1,7 @@
 package Demo.CWB;
 
 import org.testng.annotations.*;
-import pages.CbaLoginClass;////
+import pages.CbaLoginClass;
 
 import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterTest;

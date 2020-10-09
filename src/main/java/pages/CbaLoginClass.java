@@ -22,8 +22,7 @@ public class CbaLoginClass {
 		// Tap on Logon icon on the right top corner
 		driver.findElement(By.className("log-on-text")).click();
 		// Click on Common Section/NetBank/
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li/a[contains(text(),'CommSec')]")))
-				.click();
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li/a[contains(text(),'CommSec')]"))).click();
 		driver.findElement(By.id("fakeUsername")).sendKeys("fakename");
 		driver.findElement(By.id("password")).sendKeys("passwd");
 		driver.findElement(By.name("submit-commsec-form")).click();
@@ -36,8 +35,7 @@ public class CbaLoginClass {
 		// Tap on Logon icon on the right top corner
 		driver.findElement(By.className("log-on-text")).click();
 		// Click on Common Section/NetBank/
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li/a[contains(text(),'NetBank')]")))
-				.click();
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li/a[contains(text(),'NetBank')]"))).click();
 		// The login fields are within a frame.Hence switch to that before trying to
 		// input client number and password
 		driver.switchTo().frame(0);
@@ -85,8 +83,7 @@ public class CbaLoginClass {
 		// Independen")).getText(),"Travel products");
 		System.out.println(driver.findElement(By.partialLinkText("Financial Independen")).getText());
 
-		// wait1.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Discover
-		// more"))).click();
+		// wait1.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Discover more"))).click();
 	}
 
 }
